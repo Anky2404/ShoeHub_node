@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cancel Bookings</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+    <header>
+        <div class="head-wrap">
+            <div class="colleft">
+                <div class="logo">
+                    <a href="dashboard.html"> <img src="img/logo.png" alt="logo" title="logo"></a>
+                </div>
+            </div>
+            <div class="colright">
+                <h3>My Account<span><i class="fa fa-angle-down" aria-hidden="true"></i></span></h3>
+                <div class="menu" style="display: none;">
+                    <ul>
+                        <li><a href="dashboard.html"><span>Logout</span></a></li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="backend">
+        <div class="left-menu">
+            <div class="image">
+                <img src="img/admin.jpeg" alt="admin" title="admin">
+                <h3>Devin Stephens</h3>
+            </div>
+            <ul>
+                <li>
+                    <a href="dashboard.html">
+                        <i class="fa fa-building-o"></i>Dashboard
+                    </a>
+                </li>
+
+                <li>
+                    <a href="listing.html">
+                        <i class="fa fa-list-ol"></i></i>
+                        My Bookings
+                    </a>
+                </li>
+                <li>
+                    <a href="profile.html">
+                        <i class="fa fa-user-o"></i>My Profile
+                    </a>
+                </li>
+                <li>
+                    <a href="cancel.html" class="active">
+                        <i class="fa fa-times"></i>Cancel Booking
+                    </a>
+                </li>
+                <li>
+                    <a href="payment.html">
+                        <i class="fa fa-credit-card"></i>Payment History
+                    </a>
+                </li>
+                <li>
+                    <a href="login.html">
+                        <i class="fa fa-sign-in"></i>Login
+                    </a>
+                </li>
+                <li>
+                    <a href="register.html">
+                        <i class="fa fa-registered "></i>
+                        Register
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="toggle">
+            <ul>
+                <li>
+                    <a href="dashboard.html">Dashboard</a>
+                </li>
+                <li>
+                    <a href="bookings.html">My Bookings</a>
+                </li>
+                <li>
+                    <a href="profile.html">My Profile</a>
+                </li>
+                <li>
+                    <a href="cancel.html">Cancel</a>
+                </li>
+                <li>
+                    <a href="payment.html">Payment</a>
+                </li>
+                <li>
+
+                    <a href="login.html">Login</a>
+                </li>
+                <li>
+
+                    <a href="register.html">Register</a>
+                </li>
+            </ul>
+        </div>
+        <div class="dashboard">
+            <div class="title">
+                <div class="title-left">
+                    <h2>Cancel Bookings</h2>
+                </div>
+
+            </div>
+
+
+            <div class="booking-form">
+                <form>
+                    <div class="input-grid">
+                        <div class="input-box">
+                            <label for="Booking Id">Booking Id</label>
+                            <input type="text" placeholder="Booking Id">
+                        </div>
+                        <div class="input-box">
+                            <label for="Booking Id">Reason For Cancellation</label>
+                            <select name="Reason">
+                                <option value="1">Choose Reason </option>
+                                <option value="2">Low Rider Score</option>  
+                                <option value="3">Personal Issues</option>
+                                <option value="4">Others</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="input-box">
+                        <label for="Write Comment">Write Comment</label>
+                        <textarea name="Comment" id="" cols="63" rows="5" placeholder="Write Comment"></textarea>
+                    </div>
+                    <button class="btn"><i class="fa fa-times"></i> Cancel Booking</button>
+                </form>
+
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>
+        jQuery(document).ready(function() {
+
+            jQuery('.colright h3 span').click(function() {
+                jQuery('.menu').slideToggle('slow');
+            })
+        });
+    </script>
+</body>
+
+</html>

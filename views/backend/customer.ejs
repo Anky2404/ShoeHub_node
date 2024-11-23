@@ -1,0 +1,104 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<%- include('./partials/Head') %>
+
+<body>
+    <%- include('./partials/Header') %>
+    <div class="backend">
+        <%- include('./partials/LeftMenu') %>
+        <div class="dashboard ">
+            <div class="title ">
+                <div class="title-left ">
+                    <h2>Customers</h2>
+                </div>
+                <div class="title-right ">
+                    <div class="search ">
+                        <input type="text " placeholder="Search ">
+                        <i class="fa fa-search "></i>
+
+                    </div>
+                    <div class="book-btn">
+                        <a href="/Supervisor/AddStaff" class="btn"><i class="fa fa-user-plus"></i> Add Staff</a>
+                    </div>
+                    
+                </div>
+            </div>
+
+
+            <div class="booking-table ">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>S.N</th>
+                            <th>Full name</th>
+                            <th>Email</th>
+                            <th>Phone</th>
+                            <th>Registered On</th>
+                            <th>Status</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <% let id = 1; %> 
+                        <% users.forEach(user => { %>
+                            <tr>
+                                <td><%= id++ %></td> 
+                                <td><%= user.firstname+' '+user.lastname %></td>
+                                <td><%= user.email %></td>
+                                <td><%= user.phone %></td>
+                                <td><%= user.registeredAt %></td>
+                                <td class="badge badge-<%= user.status ? 'success' : 'danger' %>"><%= user.status ? 'Active' : 'Inactive' %></td>
+                                <td class="btns ">
+                                    <a href="/Supervisor/EditCustomer" class="btn accept ">Edit</a>
+                                    <a href="/Supervisor/ViewCustomer" class="btn decline ">View</a>
+                                </td>
+                            </tr>
+                        <% }); %>
+                       
+                    </tbody>
+                </table>
+
+            </div>
+            <div class="pagination ">
+                <ul>
+                    <li>
+                        <a href="bookings.html ">
+
+                            <i class="fa fa-angle-double-left "></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="active " href="bookings.html ">1</a>
+                    </li>
+                    <li>
+                        <a href="bookings.html ">2</a>
+                    </li>
+                    <li>
+                        <a href="bookings.html ">3</a>
+                    </li>
+                    <li>
+                        <a href="bookings.html ">4</a>
+                    </li>
+                    <li>
+                        <a href="bookings.html ">
+
+                            <i class="fa fa-angle-double-right "></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js "></script>
+    <script>
+        jQuery(document).ready(function () {
+
+            jQuery('.colright h3 span').click(function () {
+                jQuery('.menu').slideToggle('slow');
+            })
+        });
+    </script>
+</body>
+
+</html>

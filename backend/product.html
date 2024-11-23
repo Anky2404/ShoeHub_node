@@ -1,0 +1,287 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listing</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+    <header>
+        <div class="head-wrap">
+            <div class="colleft">
+                <div class="logo">
+                    <a href="dashboard.html"> <img src="img/logo.png" alt="logo" title="logo"></a>
+                </div>
+            </div>
+            <div class="colright">
+                <h3>My Account<span><i class="fa fa-angle-down" aria-hidden="true"></i></span></h3>
+                <div class="menu" style="display: none;">
+                    <ul>
+                        <li><a href="dashboard.html"><span>Logout</span></a></li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="backend">
+        <div class="left-menu">
+            <div class="image">
+                <img src="img/admin.jpeg" alt="admin" title="admin">
+                <h3>Devin Stephens</h3>
+            </div>
+            <ul>
+                <li>
+                    <a href="dashboard.html" class="active">
+                        <i class="fa fa-building-o"></i>Dashboard
+                    </a>
+                </li>
+
+                <li>
+                    <a href="listing.html">
+                        <i class="fa fa-list-ol"></i></i>
+                        Staff Manage
+                    </a>
+                </li>
+                <li>
+                    <a href="categories.html">
+                        <i class="fa fa-user-o"></i>Categories
+                    </a>
+                </li>
+                <li>
+                    <a href="product.html">
+                        <i class="fa fa-times"></i>Product
+                    </a>
+                </li>
+                <li>
+                    <a href="payment.html">
+                        <i class="fa fa-credit-card"></i>Order
+                    </a>
+                </li>
+                <li>
+                    <a href="query.html">
+                        <i class="fa fa-sign-in"></i>Login
+                    </a>
+                </li>
+                <li>
+                    <a href="login.html">
+                        <i class="fa fa-sign-in"></i>Queries
+                    </a>
+                </li>
+                <li>
+                    <a href="register.html">
+                        <i class="fa fa-registered "></i>
+                        Register
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="toggle">
+            <ul>
+                <li>
+                    <a href="dashboard.html">Dashboard</a>
+                </li>
+                <li>
+                    <a href="bookings.html">My Bookings</a>
+                </li>
+                <li>
+                    <a href="profile.html">My Profile</a>
+                </li>
+                <li>
+                    <a href="cancel.html">Cancel</a>
+                </li>
+                <li>
+                    <a href="payment.html">Payment</a>
+                </li>
+                <li>
+
+                    <a href="login.html">Login</a>
+                </li>
+                <li>
+
+                    <a href="register.html">Register</a>
+                </li>
+            </ul>
+        </div>
+        <div class="dashboard ">
+            <div class="title ">
+                <div class="title-left ">
+                    <h2>Product</h2>
+                </div>
+                <div class="title-right ">
+                    <div class="search ">
+                        <input type="text " placeholder="Search ">
+                        <i class="fa fa-search "></i>
+
+                    </div>
+                    <div class="book-btn ">
+                        <a href="add-product.html " class="btn "> <i class="fa fa-taxi "></i> Add Product</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="booking-table ">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Designation</th>
+                            <th>Staff Id</th>
+                            <th>Order Id</th>
+                            <th>Price</th>
+                            <th>Status</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="cab ">
+                                <div class="image "> <img src="img/product1.png " alt="cab " title="cab "></div>
+                                <div class="cab-id ">
+                                    <h4>
+                                        Classic Leather
+                                    </h4>
+                                </div>
+                            </td>
+                            <td>2 April 2023<br>03:15 PM</td>
+                            <td>77 Sunshine Strip, Harlingen </td>
+                            <td>77 Sunshine Strip, Harlingen </td>
+                            <td>$20</td>
+                            <td><span class="badge badge-primary ">Upcoming</span> </td>
+                            <td class="btns ">
+                                <button class="btn accept ">Accept</button>
+                                <button class="btn decline ">Decline</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="cab ">
+                                <div class="image "> <img src="img/product2.png " alt="cab " title="cab "></div>
+                                <div class="cab-id ">
+                                    <h4>
+                                        Classic Leather
+                                    </h4>
+                                </div>
+                            </td>
+                            <td>2 April 2023<br>03:15 PM</td>
+                            <td>77 Sunshine Strip, Harlingen </td>
+                            <td>77 Sunshine Strip, Harlingen </td>
+                            <td>$20</td>
+                            <td><span class="badge badge-danger ">Cancel</span> </td>
+                            <td class="btns ">
+                                <button class="btn accept ">Accept</button>
+                                <button class="btn decline ">Decline</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="cab ">
+                                <div class="image "> <img src="img/product1.png " alt="cab " title="cab "></div>
+                                <div class="cab-id ">
+                                    <h4>
+                                        Classic Leather
+                                    </h4>
+                                </div>
+
+                            </td>
+                            <td>2 April 2023<br>03:15 PM</td>
+                            <td>77 Sunshine Strip, Harlingen </td>
+                            <td>77 Sunshine Strip, Harlingen </td>
+                            <td>$20</td>
+                            <td><span class="badge badge-success ">Completed</span> </td>
+                            <td class="btns ">
+                                <button class="btn accept ">Accept</button>
+                                <button class="btn decline ">Decline</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="cab ">
+                                <div class="image "> <img src="img/product2.png " alt="cab " title="cab "></div>
+                                <div class="cab-id ">
+                                    <h4>
+                                        Classic Leather
+                                    </h4>
+                                </div>
+
+                            </td>
+                            <td>2 April 2023<br>03:15 PM</td>
+                            <td>77 Sunshine Strip, Harlingen </td>
+                            <td>77 Sunshine Strip, Harlingen </td>
+                            <td>$20</td>
+                            <td><span class="badge badge-info ">Confirmed</span> </td>
+                            <td class="btns ">
+                                <button class="btn accept ">Accept</button>
+                                <button class="btn decline ">Decline</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="cab ">
+                                <div class="image "> <img src="img/product3.png " alt="cab " title="cab "></div>
+                                <div class="cab-id ">
+                                    <h4>
+                                        Classic Leather
+                                    </h4>
+                                </div>
+
+                            </td>
+                            <td>2 April 2023<br>03:15 PM</td>
+                            <td>77 Sunshine Strip, Harlingen </td>
+                            <td>77 Sunshine Strip, Harlingen </td>
+                            <td>$20</td>
+                            <td><span class="badge badge-success ">Completed</span> </td>
+                            <td class="btns ">
+                                <button class="btn accept ">Accept</button>
+                                <button class="btn decline ">Decline</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+            <div class="pagination ">
+                <ul>
+                    <li>
+                        <a href="bookings.html ">
+
+                            <i class="fa fa-angle-double-left "></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="active " href="bookings.html ">1</a>
+                    </li>
+                    <li>
+                        <a href="bookings.html ">2</a>
+                    </li>
+                    <li>
+                        <a href="bookings.html ">3</a>
+                    </li>
+                    <li>
+                        <a href="bookings.html ">4</a>
+                    </li>
+                    <li>
+                        <a href="bookings.html ">
+
+                            <i class="fa fa-angle-double-right "></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js "></script>
+    <script>
+        jQuery(document).ready(function () {
+
+            jQuery('.colright h3 span').click(function () {
+                jQuery('.menu').slideToggle('slow');
+            })
+        });
+    </script>
+</body>
+
+</html>

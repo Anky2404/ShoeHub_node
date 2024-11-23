@@ -1,0 +1,185 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<%- include('./partials/Head') %>
+
+<body>
+    <%- include('./partials/Header') %>
+    <div class="backend">
+        <%- include('./partials/LeftMenu') %>
+        <div class="dashboard ">
+            <div class="title ">
+                <div class="title-left ">
+                    <h2>Query</h2>
+                </div>
+                <div class="title-right ">
+                    <div class="search ">
+                        <input type="text " placeholder="Search ">
+                        <i class="fa fa-search "></i>
+
+                    </div>
+                    <!--div class="book-btn ">
+                        <a href="bookings.html " class="btn "> <i class="fa fa-taxi "></i> Book A Taxi</a>
+                    </!--div-->
+                </div>
+            </div>
+
+
+            <div class="booking-table ">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Designation</th>
+                            <th>Staff Id</th>
+                            <th>Order Id</th>
+                            <th>Price</th>
+                            <th>Status</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="cab ">
+                                <div class="image "> <img src="img/product1.png " alt="cab " title="cab "></div>
+                                <div class="cab-id ">
+                                    <h4>
+                                        Classic Leather
+                                    </h4>
+                                </div>
+                            </td>
+                            <td>2 April 2023<br>03:15 PM</td>
+                            <td>77 Sunshine Strip, Harlingen </td>
+                            <td>77 Sunshine Strip, Harlingen </td>
+                            <td>$20</td>
+                            <td><span class="badge badge-primary ">Upcoming</span> </td>
+                            <td class="btns ">
+                                <button class="btn accept ">Accept</button>
+                                <button class="btn decline ">Decline</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="cab ">
+                                <div class="image "> <img src="img/product2.png " alt="cab " title="cab "></div>
+                                <div class="cab-id ">
+                                    <h4>
+                                        Classic Leather
+                                    </h4>
+                                </div>
+                            </td>
+                            <td>2 April 2023<br>03:15 PM</td>
+                            <td>77 Sunshine Strip, Harlingen </td>
+                            <td>77 Sunshine Strip, Harlingen </td>
+                            <td>$20</td>
+                            <td><span class="badge badge-danger ">Cancel</span> </td>
+                            <td class="btns ">
+                                <button class="btn accept ">Accept</button>
+                                <button class="btn decline ">Decline</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="cab ">
+                                <div class="image "> <img src="img/product1.png " alt="cab " title="cab "></div>
+                                <div class="cab-id ">
+                                    <h4>
+                                        Classic Leather
+                                    </h4>
+                                </div>
+
+                            </td>
+                            <td>2 April 2023<br>03:15 PM</td>
+                            <td>77 Sunshine Strip, Harlingen </td>
+                            <td>77 Sunshine Strip, Harlingen </td>
+                            <td>$20</td>
+                            <td><span class="badge badge-success ">Completed</span> </td>
+                            <td class="btns ">
+                                <button class="btn accept ">Accept</button>
+                                <button class="btn decline ">Decline</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="cab ">
+                                <div class="image "> <img src="img/product2.png " alt="cab " title="cab "></div>
+                                <div class="cab-id ">
+                                    <h4>
+                                        Classic Leather
+                                    </h4>
+                                </div>
+
+                            </td>
+                            <td>2 April 2023<br>03:15 PM</td>
+                            <td>77 Sunshine Strip, Harlingen </td>
+                            <td>77 Sunshine Strip, Harlingen </td>
+                            <td>$20</td>
+                            <td><span class="badge badge-info ">Confirmed</span> </td>
+                            <td class="btns ">
+                                <button class="btn accept ">Accept</button>
+                                <button class="btn decline ">Decline</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="cab ">
+                                <div class="image "> <img src="img/product3.png " alt="cab " title="cab "></div>
+                                <div class="cab-id ">
+                                    <h4>
+                                        Classic Leather
+                                    </h4>
+                                </div>
+
+                            </td>
+                            <td>2 April 2023<br>03:15 PM</td>
+                            <td>77 Sunshine Strip, Harlingen </td>
+                            <td>77 Sunshine Strip, Harlingen </td>
+                            <td>$20</td>
+                            <td><span class="badge badge-success ">Completed</span> </td>
+                            <td class="btns ">
+                                <button class="btn accept ">Accept</button>
+                                <button class="btn decline ">Decline</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+            <div class="pagination ">
+                <ul>
+                    <li>
+                        <a href="bookings.html ">
+
+                            <i class="fa fa-angle-double-left "></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="active " href="bookings.html ">1</a>
+                    </li>
+                    <li>
+                        <a href="bookings.html ">2</a>
+                    </li>
+                    <li>
+                        <a href="bookings.html ">3</a>
+                    </li>
+                    <li>
+                        <a href="bookings.html ">4</a>
+                    </li>
+                    <li>
+                        <a href="bookings.html ">
+
+                            <i class="fa fa-angle-double-right "></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js "></script>
+    <script>
+        jQuery(document).ready(function() {
+
+            jQuery('.colright h3 span').click(function() {
+                jQuery('.menu').slideToggle('slow');
+            })
+        });
+    </script>
+</body>
+
+</html>

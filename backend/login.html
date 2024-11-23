@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+    <header>
+        <div class="head-wrap">
+            <div class="colleft">
+                <div class="logo">
+                    <a href="dashboard.html"> <img src="img/logo-light.png" alt="logo" title="logo"></a>
+                </div>
+            </div>
+            <div class="colright">
+                <h3>My Account<span><i class="fa fa-angle-down" aria-hidden="true"></i></span></h3>
+                <div class="menu" style="display: none;">
+                    <ul>
+                        <li><a href="dashboard.html"><span>Logout</span></a></li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="backend login">
+        <form>
+            <div class="form-width">
+                <h2>Login</h2>
+                <div class="input-box">
+                    <input type="text" placeholder="Username">
+                </div>
+                <div class="input-box">
+                    <input type="text" placeholder="Password">
+                </div>
+
+                <button class="btn"><i class="fa fa-sign-in"></i> Login</button>
+                <p>
+                    Don't have an account?
+                    <a href="register.html"> Register</a>
+                </p>
+            </div>
+        </form>
+
+        <footer>
+            <p>@Copyright All Right Reserved | 2023</p>
+        </footer>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>
+        jQuery(document).ready(function() {
+
+            jQuery('.colright h3 span').click(function() {
+                jQuery('.menu').slideToggle('slow');
+            })
+        });
+    </script>
+</body>
+
+</html>

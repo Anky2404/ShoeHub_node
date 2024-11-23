@@ -1,0 +1,149 @@
+ @media(max-width:1200px) {
+     .dashboard .booking-wrap {
+         flex-wrap: wrap;
+     }
+     .dashboard .booking-box {
+         width: 50%;
+     }
+     .profile .profile-info {
+         width: 100%;
+         margin-bottom: 40px;
+     }
+     .profile {
+         display: flex;
+         flex-wrap: wrap;
+     }
+     .profile .change-password {
+         width: 100%;
+     }
+     .left-menu {
+         display: none;
+     }
+     .toggle {
+         display: block !important;
+     }
+     .backend .toggle ul .right {
+         text-align: right;
+     }
+     .dashboard {
+         padding: 190px 0px 0px 10px;
+     }
+     .booking-table table tr .btn.accept {
+         margin-bottom: 10px;
+     }
+     .backend.login {
+         padding-top: 140px;
+         min-height: 140vh;
+     }
+     .backend .toggle ul {
+         display: flex;
+         justify-content: space-between;
+     }
+ }
+ 
+ @media(max-width:900px) {
+     .backend .toggle ul {
+         display: flex;
+         flex-wrap: wrap;
+         gap: 10px;
+     }
+     .backend .toggle ul li {
+         width: 10%;
+         text-align: center;
+     }
+     .backend .title {
+         padding-left: 30px;
+     }
+ }
+ 
+ @media(max-width:900px) {
+     .backend .title {
+         margin-bottom: 30px;
+     }
+     .dashboard .booking-box {
+         width: 100%;
+     }
+     .backend .toggle {
+         height: 200px;
+         width: 900px;
+     }
+     .backend .toggle ul {
+         flex-wrap: wrap;
+         padding-left: 40px;
+     }
+     .backend .toggle ul li {
+         text-align: left;
+         margin-bottom: 10px;
+         width: 40%;
+     }
+     .dashboard {
+         padding: 300px 0px 0px 0px;
+     }
+     .backend .title {
+         display: block;
+         margin-bottom: 50px;
+     }
+     .backend .toggle ul {
+         padding: 30px 30px 30px 50px;
+     }
+     .backend .title .title-right {
+         justify-content: space-between;
+     }
+     .dashboard .title h2 {
+         margin-bottom: 20px;
+     }
+     .booking-table {
+         max-height: 300px;
+         overflow-y: auto;
+         margin-bottom: 60px;
+     }
+     .dashboard {
+         background-color: #f5f5f5;
+     }
+     .booking-table table {
+         border: 1px solid #ddd;
+     }
+     .booking-table table tr .cab {
+         display: block;
+     }
+     .booking-table table th {
+         font-size: 16px;
+     }
+     .profile .profile-info {
+         padding-left: 45px;
+         padding-right: 45px;
+     }
+ }
+ 
+ @media (max-width:700px) {
+     .backend .title {
+         padding-right: 0px;
+     }
+     .backend .toggle {
+         width: 700px;
+     }
+     .profile {
+         margin-left: 0px;
+     }
+ }
+ 
+ @media (max-width:500px) {
+     .backend .toggle {
+         width: 500px;
+     }
+     .backend .title .title-right {
+         display: block;
+     }
+     .backend .title .title-right .search {
+         margin-bottom: 30px;
+     }
+     .backend .title input {
+         width: 100%;
+     }
+     .backend .title .title-right .search i {
+         right: 10px;
+     }
+     .backend .title .title-right .btn {
+         display: block;
+     }
+ }

@@ -1,0 +1,81 @@
+<div class="topbar1">
+    <div class="container">
+        <div class="row">
+            <div class="text-center">
+                <p>World Wide Completely Free Returns and Free Shipping</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<header>
+    <div class="container">
+        <div class="row">
+            <div class="colleft">
+                <div class="headlogo">
+                    <a href="/"><img src="image/logo.png" alt="Logo"></a>
+                </div>
+            </div>
+            <div class="colright">
+                <ul>
+                    <li><a class="active" href="/">Home</a></li>
+                    <li><a href="/About">About</a></li>
+                    <li><a href="/Products">Shop</a></li>
+                    <li><a href="/Contact">Contact</a></li>
+
+                    <% if (user && user.name) { %> 
+                        <li><a href="/Login" id="login-logout">
+                            <span id="user-status"><%= user.name %></span>
+                        </a></li>
+                    <% } else { %>
+                        <li><a href="/Login">Login</a></li>
+                    <% } %>
+
+                    <li>
+                        <div class="search-container">
+                            <form action="/search" method="get">
+                                <input class="search expandright" id="searchright" type="search" name="q" placeholder="Search">
+                                <label class="button searchbutton" for="searchright"><span class="mglass">&#9906;</span></label>
+                            </form>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+   <!-- Display success or error -->
+   <% if (message) { %>
+    <div class="alert <%= results %>" id="alertMessage">
+        <%= message %>
+    </div>
+<% } %>
+</header>
+
+<script>
+
+    // Function to hide alert messages after 5 seconds
+    setTimeout(function() {
+        // Get all elements 
+        const alerts = document.querySelectorAll('.alert');
+        alerts.forEach(function(alert) {
+            alert.style.display = 'none';
+        });
+    }, 5000); 
+
+    // Toggle between username and "Logout" text
+    const userStatus = document.getElementById("user-status");
+    const username = (user && user.name) ? user.name : null;
+
+    if (userStatus) {
+        userStatus.addEventListener('mouseover', function() {
+            // Change the text to show "Username" and "Logout"
+            userStatus.textContent = 'Logout';
+        });
+
+        userStatus.addEventListener('mouseout', function() {
+            // Reset the text to show "Username"
+            userStatus.textContent = username;
+        });
+    }
+</script>
